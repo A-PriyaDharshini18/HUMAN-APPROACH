@@ -1,0 +1,17 @@
+#diamond
+...*
+..**
+.***
+****
+.***
+..**
+...*
+n=int(input())
+for i in range(1,2*n):
+    c=2*n-i if i>n else i
+    space=n-c
+    for s in range(1,space+1):
+        print(".",end="")
+    for j in range(1,c+1):
+        print("* ",end="")
+    print()
