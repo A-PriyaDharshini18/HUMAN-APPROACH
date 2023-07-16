@@ -1,0 +1,16 @@
+amstrong
+n=int(input())
+res=0
+temp=0
+sum=0
+n=temp
+while temp>0:
+    y=temp%10
+    res=y**3
+    sum=sum+res
+    temp=temp//10
+if(n==sum):
+    print("amstrong")
+else:
+    print("not amstrong")
+    

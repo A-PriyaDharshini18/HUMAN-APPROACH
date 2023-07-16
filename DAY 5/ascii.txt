@@ -1,0 +1,3 @@
+ascii
+charc=input()
+print(ord(charc))

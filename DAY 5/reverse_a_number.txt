@@ -1,0 +1,8 @@
+#reverse a number
+n=int(input())
+res=0
+while n!=0:
+    y=n%10
+    res=res*10+y
+    n=n//10
+print(res)
