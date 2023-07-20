@@ -1,0 +1,8 @@
+#finding occurance of a item in a list
+a=[1,1,2,2,2,2,3]
+x=2
+count=0
+for i in range(len(a)):
+    if a[i]==x:
+        count=count+1
+print(count)

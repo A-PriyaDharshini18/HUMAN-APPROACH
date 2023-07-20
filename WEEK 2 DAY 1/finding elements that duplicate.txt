@@ -1,0 +1,11 @@
+#finding elements that duplicate
+a=[1,2,3,6,3,4,2]
+b=len(a)
+ai=[]
+for i in range(b-1):
+    for j in range(i+1,b):
+        if a[i]==a[j]:
+            if a[i] not in ai:
+                ai.append(a[i])
+print(ai)
+           
