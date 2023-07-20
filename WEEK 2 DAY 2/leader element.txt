@@ -1,0 +1,16 @@
+#leader element
+def mac(a):
+    b=0
+    for i in a:
+        b=b+1
+    mac1=a[0]
+    mac2=a[1]
+    for i in range(1,b):
+        if a[i]>mac1:
+            mac2=mac1
+            mac1=a[i]
+        elif a[i]>mac2 and a[i]!=mac1:
+            mac2=a[i]
+    return mac1,mac2
+a=[1,2,17,3,5,4,9]
+print(mac(a))
