@@ -1,8 +1,0 @@
-#pairs that adds to given sum
-a=[1,2,3,6,3,5,1]
-b=len(a)
-sum=6
-for i in range(b-1):
-    for j in range(i+1,b):
-        if(a[i]+a[j]==sum):
-            print(a[i],a[j]) 
