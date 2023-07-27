@@ -1,0 +1,9 @@
+#substring in string
+(reverse type)
+a=input("main string")
+b=input("sub string")
+c=a[::-1]
+if b in a or b in c :
+    print("yes")
+else:
+    print("no")

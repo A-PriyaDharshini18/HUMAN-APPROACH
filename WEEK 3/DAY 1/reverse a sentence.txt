@@ -1,0 +1,25 @@
+# REVERSE A SENTENCE
+def reverse_words(input_str):
+    
+    words = []
+    current_word = ''
+    for char in input_str:
+        if char == ' ':
+            words.append(current_word)
+            current_word = ''
+        else:
+            current_word += char
+    if current_word:
+        words.append(current_word)
+
+    reversed_words = []
+    for i in range(len(words) - 1, -1, -1):
+        reversed_words.append(words[i])
+
+   
+    reversed_str = ' '.join(reversed_words)
+    return reversed_str
+
+input_str = "hoi everyone hello"
+output_str = reverse_words(input_str)
+print(output_str)
